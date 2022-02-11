@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+        integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>FOLK SONG</title>
+
+
+    <style>
+
+       @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+        body {
+        background-image: url("pexels-pixabay-235994.jpg");
+        background-size: 1000px 1000px;
+        }
+        
+        h1{
+            font-family: 'Dancing Script', cursive;
+        }
+        input[type=submit] {
+        color: black;
+        font-size: large;
+        background-color: gray;      
+        }
+
+        th, label{
+            font-family: 'Lora', serif;
+            font-size: large;
+        }
+      
+        .success,
+        .error {
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success {
+            background: green;
+        }
+
+        .error {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1><i class="fas fa-guitar"></i>Folk Song</h1>
+
+        <form id="songs-form">
+            <div>
+                <label for="number">Enter a number(1-1000):</label>
+                <input type="text" id="number" class="u-full-width" />
+            </div>
+
+            <div>
+                <input  type="submit" value="PLAY SONG" class="u-full-width" />
+            </div>
+        </form>
+
+        <table class="u-full-width" id="data">
+            <thead>
+                <tr>
+                    <th>Your Song :</th>
+                </tr>
+            </thead>
+            <tbody  id="songs-list"></tbody>
+        </table>
+    </div>
+    <script src="script1.js"></script>
+</body>
+
+</body>
+
+</html>
